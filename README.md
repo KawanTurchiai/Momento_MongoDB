@@ -1,6 +1,9 @@
 # Atividade Momento MongoDB
 
-* Quantos funcionarios da empresa Momento trabalham no departamento de vendas? ```10 funcionários``` 
+* Quantos funcionarios da empresa Momento trabalham no departamento de vendas? ```10 funcionários```
+```
+  db.funcionarios.countDocuments ({cargo: /vendas/i})
+```
 
 * Inclua suas próprias informações no departamento de Tecnologia da empresa. ```Inserido ```
 
