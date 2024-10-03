@@ -6,6 +6,15 @@
 ```
 
 * Inclua suas próprias informações no departamento de Tecnologia da empresa. ```Inserido ```
+```
+db.funcionarios.insertOne ([{
+nome : 'Kawan Barbosa Turchiai',
+telefone : '11 95113-5113',
+Cargo : 'Mobile Developer',
+salario : 27000,
+departamento : ObjectId("85992103f9b3e0b3b3c1fe74")
+}])
+```
 
 * Agora diga, quantos funcionários temos ao total na empresa? ```24 Funcionários```
 
