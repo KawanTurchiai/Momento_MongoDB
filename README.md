@@ -17,12 +17,29 @@ departamento : ObjectId("85992103f9b3e0b3b3c1fe74")
 ```
 
 * Agora diga, quantos funcionários temos ao total na empresa? ```24 Funcionários```
-
+```
+db.funcionarios.countDocuments ({})
+```
 * E quanto ao Departamento de Tecnologia? ```6 funcionários```
+```
+db.funcionarios.countDocuments ({departamento: ObjectId('85992103f9b3e0b3b3c1fe74')})
+```
 
-* Qual a média salarial do departamento de tecnologia?
+* Qual a média salarial do departamento de tecnologia? ```A média é 8.300```
+```
+db.funcionarios.aggregate([
+  { $match: { departamento: ObjectId("85992103f9b3e0b3b3c1fe74") } },
+  { $group: { _id: "$departamento", media: { $avg: "$salario" } } }
+])
+```
 
-* Quanto o departamento de Vendas gasta em salários?
+* Quanto o departamento de Vendas gasta em salários? ```61100```
+```
+db.funcionarios.aggregate([
+  { $match: { departamento: ObjectId("5992103f9b3e0b3b3c1e3e3f") } },
+  { $group: { _id: "$departamento", TotalSalario: { $sum: "$salario" } } }
+])
+```
 
 * Um novo departamento foi criado. O departamento de Inovações. 
 Ele será locado no Brasil. Por favor, adicione-o no banco de dados da empresa colocando quaisquer informações que você achar relevantes.
