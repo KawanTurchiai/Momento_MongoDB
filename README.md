@@ -1,5 +1,19 @@
 # Atividade Momento MongoDB
 
+Este repositório contém as atividades realizadas utilizando o MongoDB para gerenciar informações da empresa **Momento**. Abaixo estão as tarefas realizadas e as respectivas consultas ao banco de dados.
+
+## 1. Quantos funcionários da empresa Momento trabalham no departamento de vendas?
+
+**Resultado:** 10 funcionários
+
+Consulta MongoDB:
+```javascript
+db.funcionarios.countDocuments({ cargo: /vendas/i })
+
+
+
+
+
 * Quantos funcionarios da empresa Momento trabalham no departamento de vendas? ```10 funcionários```
 ```
   db.funcionarios.countDocuments ({cargo: /vendas/i})
