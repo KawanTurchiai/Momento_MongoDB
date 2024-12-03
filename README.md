@@ -1,6 +1,6 @@
 # Atividade Momento MongoDB
 
-Este repositório contém as atividades realizadas utilizando o MongoDB para gerenciar informações da empresa **Momento**. O objetivo é gerenciar dados dos funcionários e departamentos, assim como realizar consultas e agregações no banco de dados.
+Este repositório contém as atividades realizadas utilizando o MongoDB para gerenciar informações da empresa fake chamada **Momento**. O objetivo é gerenciar dados dos funcionários e departamentos, assim como realizar consultas e agregações no banco de dados.
 
 ## Tarefas Realizadas
 
@@ -14,7 +14,7 @@ Consulta MongoDB:
 ```javascript
 db.funcionarios.countDocuments({ cargo: /vendas/i })
 ```
-2. Inclusão de informações no departamento de Tecnologia
+### 2. Inclusão de informações no departamento de Tecnologia
 Instrução: Inclua suas próprias informações no departamento de Tecnologia da empresa.
 
 Resultado: Registro inserido com sucesso.
