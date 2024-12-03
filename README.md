@@ -13,13 +13,14 @@ Abaixo estão as tarefas realizadas, juntamente com as respectivas consultas Mon
 Consulta MongoDB:
 ```javascript
 db.funcionarios.countDocuments({ cargo: /vendas/i })
+```
 2. Inclusão de informações no departamento de Tecnologia
 Instrução: Inclua suas próprias informações no departamento de Tecnologia da empresa.
 
 Resultado: Registro inserido com sucesso.
 
 Consulta MongoDB:
-
+```
 javascript
 Copiar código
 db.funcionarios.insertOne({
@@ -29,6 +30,7 @@ db.funcionarios.insertOne({
   salario: 27000,
   departamento: ObjectId("85992103f9b3e0b3b3c1fe74")
 })
+```
 3. Quantos funcionários a empresa possui no total?
 Resultado: 24 funcionários
 
