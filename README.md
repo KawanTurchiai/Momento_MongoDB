@@ -6,7 +6,7 @@ Este repositório contém as atividades realizadas utilizando o MongoDB para ger
 
 Abaixo estão as tarefas realizadas, juntamente com as respectivas consultas MongoDB utilizadas:
 
-### 1. Quantos funcionários da empresa **Momento** trabalham no departamento de vendas?
+## 1. Quantos funcionários da empresa **Momento** trabalham no departamento de vendas?
 
 **Resultado:** 10 funcionários
 
@@ -14,7 +14,7 @@ Consulta MongoDB:
 ```javascript
 db.funcionarios.countDocuments({ cargo: /vendas/i })
 ```
-### 2. Inclusão de informações no departamento de Tecnologia
+## 2. Inclusão de informações no departamento de Tecnologia
 Instrução: Inclua suas próprias informações no departamento de Tecnologia da empresa.
 
 Resultado: Registro inserido com sucesso.
