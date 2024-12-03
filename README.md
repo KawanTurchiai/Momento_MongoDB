@@ -4,7 +4,7 @@ Este repositório contém as atividades realizadas utilizando o MongoDB para ger
 
 ## 1. Quantos funcionários da empresa Momento trabalham no departamento de vendas?
 
-**Resultado:** 10 funcionários
+**Resultado:** ```10 funcionários```
 
 ```
 javascript
@@ -16,7 +16,7 @@ db.funcionarios.countDocuments({ cargo: /vendas/i })
 
 
 ## 2. Inclua suas próprias informações no departamento de Tecnologia da empresa.
-**Resultado** Inserido 
+**Resultado** ```Inserido```
 
 ```
 db.funcionarios.insertOne ({
@@ -29,7 +29,7 @@ departamento : ObjectId("85992103f9b3e0b3b3c1fe74")
 ```
 
 ## 3. quantos funcionários temos ao total na empresa?
-**Resultado **24 Funcionários
+**Resultado** ```24 Funcionários```
 ```
 db.funcionarios.countDocuments ({})
 * E quanto ao Departamento de Tecnologia?
@@ -45,7 +45,7 @@ db.funcionarios.aggregate([
 ])
 ```
 ## 4. Quanto o departamento de Vendas gasta em salários?
-**Resultado** 61100
+**Resultado** ```61100```
 
 ```
 db.funcionarios.aggregate([
@@ -54,25 +54,88 @@ db.funcionarios.aggregate([
 ])
 ```
 
-## 5. Um novo departamento foi criado. O departamento de Inovações. 
+## 5. Um novo departamento foi criado. O departamento de Inovações.
 Ele será locado no Brasil. Por favor, adicione-o no banco de dados da empresa colocando quaisquer informações que você achar relevantes.
+**Resultado** ```result```
 
-* O departamento de Inovações está sem funcionários. Inclua alguns colegas de turma nesse departamento.  
+```
+code
+```
 
-* Quantos funcionarios a empresa Momento tem agora?
+## 6. O departamento de Inovações está sem funcionários. Inclua alguns colegas de turma nesse departamento.  
+**Resultado** ```result```
 
-* Quantos funcionários da empresa Momento possuem conjuges?
 
-* Qual a média salarial dos funcionários da empresa Momento, excluindo-se o CEO?
+```
+code
+```
 
-* Qual a média salarial do departamento de tecnologia? 
+## 7. Quantos funcionarios a empresa Momento tem agora?
+**Resultado** ```result```
 
-* Qual o departamento com a maior média salarial?
 
-* Qual o departamento com o menor número de funcionários?
+```
+code
+```
 
-* Pensando na relação quantidade e valor unitario, qual o produto mais valioso da empresa?
+## 8. Quantos funcionários da empresa Momento possuem conjuges?
+**Resultado** ```result```
 
-* Qual o produto mais vendido da empresa?
 
-* Qual o produto menos vendido da empresa?
+```
+code
+```
+
+## 9. Qual a média salarial dos funcionários da empresa Momento, excluindo-se o CEO?
+**Resultado** ```result```
+
+
+```
+code
+```
+
+## 10. Qual a média salarial do departamento de tecnologia? 
+**Resultado** ```result```
+
+
+```
+code
+```
+
+## 11. Qual o departamento com a maior média salarial?
+**Resultado** ```result```
+
+
+```
+code
+```
+
+## 12. Qual o departamento com o menor número de funcionários?
+**Resultado** ```result```
+
+
+```
+code
+```
+
+## 13. Pensando na relação quantidade e valor unitario, qual o produto mais valioso da empresa?
+**Resultado** ```result```
+
+
+```
+code
+```
+
+## 14. Qual o produto mais vendido da empresa?
+**Resultado** ```result```
+
+
+```
+code
+```
+
+## 15. Qual o produto menos vendido da empresa?
+
+```
+code
+```
